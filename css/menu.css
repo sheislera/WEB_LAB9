@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu&display=swap');
+.menu__main{
+    list-style: none;
+    margin: 40px 0 5px;
+    text-align: center;
+}
+.menu__main li {
+    display: inline-block;
+}
+.menu__main li::after {
+    content: "|";
+    color:antiquewhite;
+    display: inline-block;
+    vertical-align: top;
+}
+.menu__main li:last-child::after {
+    content: none;
+}
+.menu__main a {
+    text-decoration: none;
+    font-family: 'Lobster', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu__main a,
+.menu__main a:visited {
+    color: antiquewhite;
+}
+.menu__main a:hover {
+    color: aquamarine;
+}
+.menu__main a::before,
+.menu__main a::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #676767;
+    transition: .8s;
+}
+.menu__main a:hover::before,
+.menu__main .current::before {
+    left: 0;
+}
+.menu__main a:hover:after,
+.menu__main .current::after{
+    right: 0;
+}
+@media (max-width: 550px) {
+    .menu__main {
+        padding-top: 0;
+    }
+    .menu__main li {
+        display: block;
+    }
+    .menu__main li::after {
+        content: none;
+    }
+    .menu__main a {
+        padding: 25x 0 20x;
+        margin: 0 30 px;
+    }
+}

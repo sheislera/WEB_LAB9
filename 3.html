@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/3.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <h1>Лабораторна 3. Javascript</h1>
+            <h2>Лагодна Валерія Володимирівна</h2>
+            <p>КН-32</p>
+            <p>8 варіант</p>
+        </header>
+        <ul class="menu__main">
+            <li><a href="../9 лаба/index.html">Лабораторна робота №1</a></li>
+            <li><a href="../9 лаба/2.html">Лабораторна робота №2</a></li>
+            <li><a href="../9 лаба/3.html">Лабораторна робота №3</a></li>
+            <li><a href="../9 лаба/4.html">Лабораторна робота №4</a></li>
+        </ul>
+        <h2>Завдання </h2>
+        <div class="task">
+            <p> 1. Дано блок з кнопкою 'закрити блок'. При натисканні на цю кнопку блок повинен зникнути з форми. Кнопка розміщується всередині блоку і повинна зникнути разом з ним. Блоків може бути будь-яка кількість, допускається щоб один з блоків був всередині іншого. Кожен блок закриває своя кнопка.</p>
+            <p> 2. Дана таблиця з числами. При натисканні на кнопку в останній ряд таблиці в кожну клітинку запишіть суму чисел в стовпці таблиці.</p>
+        </div>
+        <div class="block">
+            <p>Перший блок</p>
+            <button class="button but__hov" onclick="closeBlock(this)">Закрити</button>
+        </div>
+        <div class="block">
+            <p>Другий блок</p>
+            <button class="button but__hov" onclick="closeBlock(this)">Закрити</button>
+        </div>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <button class="button but__hov" onclick="calculateSum()">Сума стовпців</button>
+    </main>
+</body>
+</html>

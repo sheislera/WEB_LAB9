@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/2.js"></script>
+    <title>2 ЛР</title>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <h1>Лабораторна 2. Javascript</h1>
+            <h2>Лагодна Валерія Володимирівна</h2>
+            <p>КН-32</p>
+            <p>3 варіант</p>
+        </header>
+        <ul class="menu__main">
+            <li><a href="../9 лаба/index.html">Лабораторна робота №1</a></li>
+            <li><a href="../9 лаба/2.html">Лабораторна робота №2</a></li>
+            <li><a href="../9 лаба/3.html">Лабораторна робота №3</a></li>
+            <li><a href="../9 лаба/4.html">Лабораторна робота №4</a></li>
+        </ul>
+        <h2>Завдання </h2>
+        <div class="task">
+            <p>На Вашій сторінці є кнопка. При наведенні на неї вивести текст.</p>
+            <p> Ввести групу (з клавіатури), прізвище студента та курс (поля вводу). Якщо неправильно вказано курс (перша цифра номеру групи), вивести попередження, інакше вивести повне ім’я студента.</p>
+        <div id="result_pib"></div>
+        <button class="button" onmouseover="print_pib()" onmouseout="clear_all()">
+            Вивести текст
+        </button>
+        <br>
+        <label>
+            Введіть групу
+            <input type="number" id="group">
+        </label>
+        <label>
+            Введіть прізвище
+            <input type="text" id="surname">
+        </label>
+        <label>
+            Введіть курс
+            <input type="number" id="course">
+        </label>
+        </div>
+    </main>
+</body>
+</html>
